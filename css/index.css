@@ -327,6 +327,18 @@ footer .copyright {
   line-height: 2;
 }
 
+@media (max-width: 900px) {
+  #root {
+    width: 95%;
+  }
+  .headline .box .headline-img,
+  .vision-image .middle-img,
+  .services-header-img,
+  .facts .box-no-bg .services-info-img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   #root {
     width: 97%;
@@ -359,15 +371,11 @@ footer .copyright {
   .headline .box:nth-child(2) {
     display: none;
   }
-  .middle-img {
-    width: 100%;
-  }
+
   .company-info .box {
     width: 32%;
   }
-  .services-header-img {
-    width: 100%;
-  }
+
   .facts .box-no-bg {
     width: 100%;
   }
