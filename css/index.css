@@ -320,6 +320,7 @@ footer .copyright {
   list-style-type: square;
   list-style-position: inside;
   margin: 20px 0 0 0;
+  width: 100%;
 }
 
 .facts .box-no-bg .facts-list li {
@@ -364,6 +365,26 @@ footer .copyright {
   .company-info .box {
     width: 32%;
   }
+  .services-header-img {
+    width: 100%;
+  }
+  .facts .box-no-bg {
+    width: 100%;
+  }
+  .facts .box-no-bg:last-child {
+    display: none;
+  }
+  .facts .box-no-bg .facts-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .facts .box-no-bg .facts-list li {
+    width: 49%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -395,5 +416,25 @@ footer .copyright {
   .company-info .box {
     width: 100%;
     margin-top: 30px;
+  }
+  .services .box {
+    width: 100%;
+  }
+  .services .box .learn-more {
+    width: 100%;
+    text-align: center;
+    background: #e1e1e2;
+    -webkit-box-shadow: inset 3px -13px 16px 0px rgba(255, 255, 255, 0.33);
+    -moz-box-shadow: inset 3px -13px 16px 0px rgba(255, 255, 255, 0.33);
+    box-shadow: inset 3px -13px 16px 0px rgba(255, 255, 255, 0.33);
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+
+  .facts .box-no-bg .facts-list {
+    flex-wrap: wrap;
+  }
+  .facts .box-no-bg .facts-list li {
+    width: 49%;
   }
 }
